@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.ML.Data;
-using Microsoft.ML.Trainers.FastTree;
 using Microsoft.ML.Trainers;
 using Microsoft.ML;
 
@@ -14,7 +13,7 @@ namespace ConsoleApp2
 {
     public partial class MLModel1
     {
-        public const string RetrainFilePath =  @"C:\Users\arung\source\repos\arung2207\MLDemo\02-ML\ConsoleApp2\yelp_labelled.txt";
+        public const string RetrainFilePath =  @"yelp_labelled.txt";
         public const char RetrainSeparatorChar = '	';
         public const bool RetrainHasHeader =  false;
 
@@ -92,7 +91,7 @@ namespace ConsoleApp2
             var pipeline = mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"col0",outputColumnName:@"col0")      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"col0"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"col1",inputColumnName:@"col1",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastTree(new FastTreeBinaryTrainer.Options(){NumberOfLeaves=4,MinimumExampleCountPerLeaf=20,NumberOfTrees=162,MaximumBinCountPerFeature=173,FeatureFraction=0.945363300019507,LearningRate=0.981465103344731,LabelColumnName=@"col1",FeatureColumnName=@"Features",DiskTranspose=false}),labelColumnName: @"col1"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.03125F,L2Regularization=3.80581F,LabelColumnName=@"col1",FeatureColumnName=@"Features"}))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;

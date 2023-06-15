@@ -3,7 +3,7 @@
   "DataSource": {
     "Type": "TabularFile",
     "Version": 1,
-    "FilePath": "C:\\Users\\arung\\source\\repos\\arung2207\\MLDemo\\02-ML\\ConsoleApp2\\yelp_labelled.txt",
+    "FilePath": "yelp_labelled.txt",
     "Delimiter": "\t",
     "DecimalMarker": ".",
     "HasHeader": false,
@@ -37,9 +37,261 @@
       {
         "Version": 1,
         "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.79244776847789422,
+        "RuntimeInSeconds": 0.28,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
+          "e0": {
+            "InputColumnName": "col0",
+            "OutputColumnName": "col0"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "col0"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "col1",
+            "InputColumnName": "col1",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e7": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 3.80580974,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.78029136188627124,
+        "RuntimeInSeconds": 0.269,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e10",
+          "e0": {
+            "InputColumnName": "col0",
+            "OutputColumnName": "col0"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "col0"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "col1",
+            "InputColumnName": "col1",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e7": {
+            "L1Regularization": 0.0607351847,
+            "L2Regularization": 6.81664467,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.7580422960621821,
+        "RuntimeInSeconds": 17.86,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5 * e10",
+          "e0": {
+            "InputColumnName": "col0",
+            "OutputColumnName": "col0"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "col0"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "col1",
+            "InputColumnName": "col1",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.13155483505548438,
+            "NumberOfTrees": 4585,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 394,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.71005751923672833,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
         "TrainerName": "FastTreeOva",
-        "Score": 0.75357445991665362,
-        "RuntimeInSeconds": 3.776,
+        "Score": 0.75558617923081006,
+        "RuntimeInSeconds": 1.716,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
           "e0": {
@@ -62,263 +314,11 @@
             "AddKeyValueAnnotationsAsText": false
           },
           "e3": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "NumberOfTrees": 162,
-            "MaximumBinCountPerFeature": 173,
-            "FeatureFraction": 0.945363300019507,
-            "LearningRate": 0.98146510334473058,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
-          },
-          "e4": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 4,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e5": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 1.0,
-            "NumberOfTrees": 4,
-            "SubsampleFraction": 1.0,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "L1Regularization": 2E-10,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e6": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e8": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e9": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestOva",
-        "Score": 0.74346546233292243,
-        "RuntimeInSeconds": 3.279,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e4 * e10",
-          "e0": {
-            "InputColumnName": "col0",
-            "OutputColumnName": "col0"
-          },
-          "e1": {
-            "InputColumnNames": [
-              "col0"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e10": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
-          },
-          "e2": {
-            "OutputColumnName": "col1",
-            "InputColumnName": "col1",
-            "AddKeyValueAnnotationsAsText": false
-          },
-          "e4": {
-            "NumberOfTrees": 16,
-            "NumberOfLeaves": 21,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e3": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "NumberOfTrees": 4,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "LearningRate": 0.099999999999999978,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
-          },
-          "e5": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 1.0,
-            "NumberOfTrees": 4,
-            "SubsampleFraction": 1.0,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "L1Regularization": 2E-10,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e6": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e8": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e9": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestOva",
-        "Score": 0.73984816313461266,
-        "RuntimeInSeconds": 1.853,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e4 * e10",
-          "e0": {
-            "InputColumnName": "col0",
-            "OutputColumnName": "col0"
-          },
-          "e1": {
-            "InputColumnNames": [
-              "col0"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e10": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
-          },
-          "e2": {
-            "OutputColumnName": "col1",
-            "InputColumnName": "col1",
-            "AddKeyValueAnnotationsAsText": false
-          },
-          "e4": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 46,
-            "FeatureFraction": 0.908459842,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e3": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "NumberOfTrees": 4,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "LearningRate": 0.099999999999999978,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features",
-            "DiskTranspose": false
-          },
-          "e5": {
-            "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 1.0,
-            "NumberOfTrees": 4,
-            "SubsampleFraction": 1.0,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "L1Regularization": 2E-10,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e6": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e7": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 1.0,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e8": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
-          "e9": {
-            "L1Regularization": 1.0,
-            "L2Regularization": 0.1,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastTreeOva",
-        "Score": 0.73502517226550412,
-        "RuntimeInSeconds": 13.132,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
-          "e0": {
-            "InputColumnName": "col0",
-            "OutputColumnName": "col0"
-          },
-          "e1": {
-            "InputColumnNames": [
-              "col0"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e10": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
-          },
-          "e2": {
-            "OutputColumnName": "col1",
-            "InputColumnName": "col1",
-            "AddKeyValueAnnotationsAsText": false
-          },
-          "e3": {
-            "NumberOfLeaves": 12,
-            "MinimumExampleCountPerLeaf": 53,
-            "NumberOfTrees": 623,
-            "MaximumBinCountPerFeature": 103,
-            "FeatureFraction": 0.66912402652189884,
+            "NumberOfLeaves": 6,
+            "MinimumExampleCountPerLeaf": 19,
+            "NumberOfTrees": 23,
+            "MaximumBinCountPerFeature": 72,
+            "FeatureFraction": 0.75780942331652734,
             "LearningRate": 0.99999977667298645,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features",
@@ -373,11 +373,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.73180024481967609,
-        "RuntimeInSeconds": 0.414,
+        "TrainerName": "FastTreeOva",
+        "Score": 0.754821883854644,
+        "RuntimeInSeconds": 1.924,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e6 * e10",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
           "e0": {
             "InputColumnName": "col0",
             "OutputColumnName": "col0"
@@ -397,19 +397,13 @@
             "InputColumnName": "col1",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e6": {
-            "L1Regularization": 0.03125,
-            "L2Regularization": 17.5864868,
-            "LabelColumnName": "col1",
-            "FeatureColumnName": "Features"
-          },
           "e3": {
             "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 20,
-            "NumberOfTrees": 4,
-            "MaximumBinCountPerFeature": 255,
-            "FeatureFraction": 1.0,
-            "LearningRate": 0.099999999999999978,
+            "MinimumExampleCountPerLeaf": 3,
+            "NumberOfTrees": 25,
+            "MaximumBinCountPerFeature": 92,
+            "FeatureFraction": 0.62816216388209789,
+            "LearningRate": 0.99999977667298645,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features",
             "DiskTranspose": false
@@ -430,6 +424,12 @@
             "MaximumBinCountPerFeature": 255,
             "FeatureFraction": 1.0,
             "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "col1",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
             "L2Regularization": 1.0,
             "LabelColumnName": "col1",
             "FeatureColumnName": "Features"
